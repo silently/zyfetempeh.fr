@@ -1,6 +1,6 @@
 # zyfetempeh.fr
 
-Site vitrine de **Zyfe**, généré avec [Eleventy (11ty)](https://www.11ty.dev/) et déployé sur GitHub Pages.
+Site vitrine de [**Zyfe**](https://zyfetempeh.fr), généré avec [Eleventy (11ty)](https://www.11ty.dev/) et déployé sur GitHub Pages.
 
 Design minimal, mobile-first, sans framework CSS ni JavaScript.
 
