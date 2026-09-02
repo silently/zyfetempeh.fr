@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- set pageTitle = seoTitle or (title + " · " + site.name) -%}
+  {%- set pageDesc = description or site.description -%}
+  {%- set canonical = site.url + page.url -%}
+
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDesc }}">
+  <link rel="canonical" href="{{ canonical }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDesc }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDesc }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- Données structurées : identité du site -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ site.name | dump | safe }},
+    "url": {{ site.url | dump | safe }},
+    "description": {{ site.description | dump | safe }},
+    "logo": {{ (site.url + "/assets/logo.svg") | dump | safe }},
+    "sameAs": [{{ site.instagram | dump | safe }}]
+  }
+  </script>
+
+  {%- if faq %}
+  <!-- Données structurées : FAQ (rich results Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- for item in faq %}
+      {
+        "@type": "Question",
+        "name": {{ item.q | dump | safe }},
+        "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | dump | safe }} }
+      }{{ "," if not loop.last }}
+      {%- endfor %}
+    ]
+  }
+  </script>
+  {%- endif %}
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <span class="site-nav-spacer" aria-hidden="true"></span>
+    <div class="site-nav-links">
+      {%- for item in site.nav %}
+      <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a>
+      {%- endfor %}
+    </div>
+    <a class="insta" href="{{ site.instagram }}" target="_blank" rel="noopener me"
+       aria-label="{{ site.name }} sur Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </a>
+  </nav>
+
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="{{ site.name }} — accueil">
+      <img src="/assets/logo.svg" alt="{{ site.name }}" width="256" height="224">
+    </a>
+  </header>
+
+  <main class="page" id="contenu">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>© {{ site.name }} — <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Zyfe",
+  "url": "https://zyfetempeh.fr",
+  "locale": "fr_FR",
+  "lang": "fr",
+  "description": "Tempeh artisanal fermenté à partir de légumineuses, fabriqué en petites quantités.",
+  "ogImage": "/assets/og-image.png",
+  "instagram": "https://www.instagram.com/zyfetempeh/",
+  "instagramHandle": "zyfetempeh",
+  "nav": [
+    { "text": "Tempeh", "url": "/" },
+    { "text": "Recettes", "url": "/recettes/" },
+    { "text": "À propos", "url": "/a-propos/" }
+  ]
+}
