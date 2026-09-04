@@ -43,6 +43,28 @@ a { color: var(--accent-strong); }
 a:hover { color: var(--accent); }
 
 img { max-width: 100%; height: auto; }
+.photo {
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+}
+@media (min-width: 640px) {
+  .recipe-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .recipe-row ul {
+    flex: 1;
+    margin: 0;
+  }
+  .recipe-row .photo--side {
+    flex-shrink: 0;
+    width: 250px;
+    margin: 0;
+  }
+}
 
 /* Accessibilité : lien d'évitement */
 .skip-link {

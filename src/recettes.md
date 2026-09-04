@@ -9,10 +9,12 @@ description: "Idées de recettes simples pour cuisiner le tempeh : mariné et po
 
 <p class="lead">Des idées de recette à décliner selon vos envies.</p>
 
-Le tempeh peut être coupé en tranches, en cubes, émietté puis cuit de toutes les manières imaginables : poêlé, frit, mijoté, au four ou barbecue, bouilli ou à la vapeur.
+Le tempeh peut être coupé en tranches, en cubes ou émietté puis cuit de toutes les manières imaginables : poêlé, frit, mijoté, au four ou barbecue, bouilli ou à la vapeur.
 
 
 ## À la poêle
+
+<div class="recipe-row">
 
 - Préchauffez la poêle sur feu vif
 - En attendant, découpez le tempeh en tranches d'un demi-centimètre
@@ -21,6 +23,10 @@ Le tempeh peut être coupé en tranches, en cubes, émietté puis cuit de toutes
 - Laissez dorer 2 à 3 min par face
 - Ajoutez un trait d'eau pour réhydrater
 - Assaisonnez hors du feu
+
+<img class="photo photo--side" src="/assets/stove.jpg" alt="Bloc de tempeh doré à la poêle" width="960" height="960" loading="lazy">
+
+</div>
 
 ## Les marinades
 
