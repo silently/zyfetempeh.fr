@@ -2,43 +2,69 @@
 layout: base.njk
 title: Tempeh
 seoTitle: "Zyfe — tempeh artisanal fabriqué à Marseille, produit fermenté non pasteurisé"
-description: "Zyfe : tempeh artisanal fermenté à partir de légumineuses, riche en protéines végétales. Qu'est-ce que le tempeh, comment le conserver et le cuisiner — la foire aux questions."
-faq:
-  - q: "J'ai acheté du tempeh, comment le conserver ?"
-    a: "Notre tempeh est un produit frais, mettez-le au frigo en rentrant chez vous. Si vous en avez acheté plusieurs blocs, ne les empilez pas : répartissez-les dans le frigo ou mettez-les comme des livres dans une bibliothèque, avec un peu d'air entre chaque bloc. Et si vous souhaitez le conserver au-delà de la DLC, mettez le tempeh au congélateur (jusqu'à 3 mois)."
-  - q: "Comment est emballé le tempeh Zyfe ?"
-    a: "Nous conservons l'emballage qui a servi lors de la fermentation afin de limiter les manipulations et l'utilisation de plastique. Cet emballage est percé régulièrement (technique propre à la fermentation du tempeh) et c'est pourquoi il est protégé d'une feuille de papier pour sa conservation. Pour ouvrir le sachet plastique, tirez sur les bords repliés du zip."
-  - q: "Des taches noires sont apparues sur le tempeh, puis-je le manger ?"
-    a: "Oui si la DLC est respectée. Ces petites taches noires sont dues à la sporulation du champignon (à la manière des veines bleues du roquefort) et n'altèrent ni le goût ni la comestibilité du tempeh. Au bout de quelques jours, le goût du tempeh est plus prononcé, indépendamment de l'apparition ou non de ces petites taches."
-  - q: "Quel goût a le tempeh et quelle est sa texture ?"
-    a: "Le tempeh a un goût subtil (touches de noisette, champignon blanc) qui se révèle à la cuisson. Sa texture est à la fois ferme et fondante : il se tranche, se poêle, se grille et se marine très facilement."
-  - q: "Comment le cuisiner ?"
-    a: 'Le tempeh est un ingrédient polyvalent, que l''on tranche ou coupe en dés. On le cuit poêlé, frit, mijoté, au four, à la vapeur... Avec un peu d''huile et d''épices ou préalablement mariné. Une recette simple pour démarrer : cuire à la poêle avec un peu d''huile d''olive et de sel, et si le tempeh est légèrement déshydraté (après quelques jours au frigo), ajoutez un trait d''eau en fin de cuisson. Voir également nos <a href="/recettes/">idées de recette</a>.'
-  - q: "Puis-je le manger en salade ?"
-    a: "Il est recommandé de cuire le tempeh, ainsi pour le manger froid en salade : couper en dés, cuire dans l'eau bouillante quelques minutes, laisser refroidir avant d'ajouter une marinade et de le mettre au frigo."
-  - q: "Quels sont les bénéfices du tempeh ?"
-    a: "Le tempeh est 100 % végétal et constitue une excellente source de protéines complètes (dans le cas du tempeh de soja), de fibres et de minéraux, avec un indice glycémique faible. La fermentation améliore aussi la digestibilité des légumineuses. En tant que protéine végétale, son impact environnemental est beaucoup plus faible que les protéines animales."
-  - q: "Le tempeh contient-il des allergènes ?"
-    a: "Le tempeh peut être fait à partir de différentes légumineuses ou céréales dont certaines contiennent des allergènes (soja, gluten ou sésame selon la recette). Référez-vous aux informations de l'emballage."
-  - q: "Vos ingrédients sont-ils bio ?"
-    a: "Nous fabriquons en petites quantités à partir de légumineuses et céréales bio mais n'avons actuellement pas de certification bio."
-  - q: "Où acheter le tempeh Zyfe ?"
-    a: 'Suivez-nous <a href="https://www.instagram.com/zyfetempeh/" target="_blank" rel="noopener">@zyfetempeh</a> pour connaître nos disponibilités et actualités.'
+description: "Zyfe : tempeh artisanal fermenté à partir de légumineuses, riche en protéines végétales. Qu'est-ce que le tempeh et que propose Zyfe ?"
 ---
 
-<p class="lead">Tempeh artisanal, fermenté à Marseille — savoureux et riche en protéines végétales.</p>
+<h1 class="lead">Marseille, voilà ton tempeh frais et local</h1>
 
-Le tempeh est un aliment fermenté originaire d’Indonésie à base de soja, où un champignon (Rhizopus) transforme les fèves en un bloc savoureux, facile à cuisiner, riche en protéines et facile à digérer.
+Le tempeh est un aliment riche en protéines végétales (jusqu'à 19g de protéines pour une portion de 100g), source de fibres et de minéraux, qui peut se cuisiner comme — et à la place de — la viande.
 
-Nous proposons également du tempeh de pois chiche-sésame, ou lentille-orge.
+<p class="btn-row">
+  <a class="btn" href="/ou-nous-trouver/">Où nous trouver ?</a>
+</p>
 
-## Le tempeh en pratique
+## D'où vient le tempeh ?
 
-<div class="faq">
-{%- for item in faq %}
-<details>
-<summary>{{ item.q }}</summary>
-<p>{{ item.a | safe }}</p>
-</details>
-{%- endfor %}
-</div>
+C'est un aliment fermenté traditionnel d’Indonésie à base de fèves de soja transformées par un champignon (Rhizopus) en un bloc savoureux, facile à cuisiner et riche en protéines.
+
+Cette fermentation fonctionne avec d'autres graines que le soja, nous permettant de jouer avec les goûts, les couleurs et les saisons.
+
+## Pourquoi Zyfe ?
+
+Zyfe est né d'une envie simple : proposer à Marseille un tempeh frais, artisanal et savoureux.
+
+C'est un aliment riche en protéines végétales qui convient donc à de nombreux régimes (des flexitariens aux végans) mais aussi aux sportifs et aux curieux de nouveaux aliments à cuisiner — voir [nos idées de recette](/recettes/). Sa texture et son goût sont appréciés des plus jeunes !
+
+## Qualités nutritionnelles
+
+Le tempeh a des propriétés nutritionnelles intéressantes : protéine complète (dans le cas du soja), fibres, minéraux et acide gras insaturés, pour un indice glycémique faible.
+
+Le tempeh est une fermentation qui améliore la digestibilité des légumineuses. Le tempeh Zyfe n'étant pas pasteurisé, ses ferments restent vivants.
+
+Selon la recette, il peut contenir des allergènes (soja, gluten ou sésame) : ils sont indiqués en gras sur nos emballages.
+
+<!-- TODO : remplacer par une photo de l'atelier -->
+<img class="photo" src="/assets/double-h.jpg" alt="Gros plan sur deux blocs de tempeh Zyfe" width="1000" height="563" loading="lazy">
+
+## Nos tempehs
+
+Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio(légumineuses et céréales), cependant nous n'avons pas encore démarré de certification bio.
+
+<ul class="products">
+  <li>
+    <strong>Tempeh de soja</strong>
+    Le séculaire.
+  </li>
+  <li>
+    <strong>Tempeh lentilles orge</strong>
+    Notre spécialité.
+  </li>
+  <li>
+    <strong>Tempeh pois chiche sésame</strong>
+    Le moyen-orient à la rescousse.
+  </li>
+</ul>
+
+<p class="btn-row">
+  <a class="btn" href="/ou-nous-trouver/">Où nous trouver ?</a>
+</p>
+
+## Comment le cuisiner
+
+Le tempeh se tranche, se coupe en dés ou s'émiette, puis se cuit de toutes les manières : poêlé, frit, mijoté, au four, au barbecue ou à la vapeur.
+
+Une recette pour démarrer : coupez le tempeh en tranches d'un demi-centimètre, faites-les dorer 3 minutes par face à la poêle avec un peu d'huile d'olive et de sel, assaisonnez hors du feu.
+
+<p class="btn-row">
+  <a class="btn" href="/recettes/">Voir nos recettes</a>
+</p>

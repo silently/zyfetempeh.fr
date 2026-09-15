@@ -7,6 +7,9 @@ module.exports = function (eleventyConfig) {
   // Date au format ISO 8601 pour le <lastmod> du sitemap.
   eleventyConfig.addFilter("dateToIso", (d) => new Date(d).toISOString());
 
+  // Année courante, pour le © du pied de page.
+  eleventyConfig.addShortcode("annee", () => String(new Date().getFullYear()));
+
   return {
     dir: {
       input: "src",

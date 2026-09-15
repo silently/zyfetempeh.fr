@@ -4,10 +4,22 @@
   --bg: #ffffff;
   --surface: #ffffff;
   --text: #29251f;
-  --muted: #6f6a60;
+  --muted: #635e54;
   --accent: #5c7f4a;
   --accent-strong: #46612f;
   --line: #e8e2d6;
+  --berry: #863f48;
+  /* Vert prélevé sur le grain tout en haut du logo (#9b9e25 dans logo.svg). */
+  --olive: #9b9e25;
+  --olive-light: #a9ac2f;
+  --olive-deep: #6b6d19;
+  --olive-ink: #1f2208;
+  /* TODO : ces deux polices sont pour l'instant chargées depuis Google Fonts
+     (voir src/_includes/base.njk). Il faudra les héberger dans le projet —
+     le chargement distant transmet l'IP des visiteurs à Google, et ajoute
+     une connexion tierce au premier rendu. */
+  --font-body: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Vollkorn", Georgia, "Times New Roman", serif;
   --radius: 12px;
   --maxw: 42rem;
   --navh: 3.75rem;
@@ -18,10 +30,13 @@
     --bg: #1a1815;
     --surface: #232019;
     --text: #ece7dd;
-    --muted: #a49c8d;
+    --muted: #b0a89a;
     --accent: #9cbf7f;
     --accent-strong: #b6d69a;
     --line: #35302a;
+    --berry: #e2919a;
+    /* Le vert du logo reste identique ; seul l'olive de contour s'éclaircit. */
+    --olive-deep: #d1d693;
   }
 }
 
@@ -31,7 +46,7 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--text);
@@ -71,8 +86,8 @@ img { max-width: 100%; height: auto; }
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--accent);
-  color: #fff;
+  background: var(--accent-strong);
+  color: var(--bg);
   padding: .6rem 1rem;
   border-radius: 0 0 var(--radius) 0;
   z-index: 100;
@@ -91,7 +106,7 @@ img { max-width: 100%; height: auto; }
   justify-content: center;
   padding: 2rem 1rem 1rem;
 }
-.logo img { display: block; }
+.site-header .logo { display: block; }
 
 /* ── Navbar : fixe en haut, liens centrés, Instagram calé à droite ── */
 .site-nav {
@@ -149,13 +164,29 @@ img { max-width: 100%; height: auto; }
 }
 .insta:hover { color: var(--accent); }
 
+/* Sous 640 px, la grille centrée écrase les liens : on passe en flux simple. */
+@media (max-width: 639px) {
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    padding: .35rem .5rem;
+  }
+  .site-nav-spacer { display: none; }
+  .site-nav-links { gap: .1rem .15rem; }
+  .site-nav-links a { padding: .5rem .5rem; }
+  .insta { margin-left: auto; }
+}
+
 /* ── Corps de page ── */
 .page {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 2rem 1.15rem 3rem;
 }
+/* Seuls les h1 passent en Vollkorn ; le reste de la page reste en
+   Schibsted Grotesk (--font-body). */
 .page h1 {
+  font-family: var(--font-display);
   font-size: 1.9rem;
   line-height: 1.2;
   margin: 0 0 .5rem;
@@ -165,11 +196,96 @@ img { max-width: 100%; height: auto; }
   font-size: 1.3rem;
   margin: 2.25rem 0 .75rem;
 }
-.lead {
-  font-size: 1.15rem;
+.page h3 {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 .5rem;
+}
+.page h1.lead {
+  font-size: 2.15rem;
+  line-height: 1.15;
   color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 .5rem;
+}
+.page p {
+  text-align: justify;
+}
+.lead-sm {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+.sublead {
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--berry);
+  font-weight: 700;
   margin: 0 0 1.5rem;
 }
+
+/* ── Boutons (ce sont des liens) ── */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin: 1.75rem 0;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: .7rem 1.35rem;
+  /* Le contour détache le bouton du fond blanc : l'olive du logo est trop
+     clair pour s'en distinguer seul (2,87:1, sous le seuil de 3:1). */
+  border: 1px solid var(--olive);
+  border-radius: 999px;
+  background: var(--olive);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.btn:hover {
+  border-color: var(--olive-deep);
+  color: #eeeeee;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--olive-deep);
+}
+.btn--ghost:hover {
+  background: color-mix(in srgb, var(--olive) 15%, transparent);
+  color: var(--olive-deep);
+  border-color: var(--olive-deep);
+}
+
+/* ── Nos tempeh ── */
+.products {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+  display: grid;
+  gap: .75rem;
+}
+.products li {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1rem 1.15rem;
+  color: var(--muted);
+}
+.products strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.05rem;
+  margin-bottom: .15rem;
+}
+
 
 /* ── FAQ (balise <details> native, sans JavaScript) ── */
 .faq { margin-top: 1rem; }
@@ -214,10 +330,35 @@ img { max-width: 100%; height: auto; }
   font-size: .9rem;
   text-align: center;
 }
+.site-footer p { margin: 0 0 .35rem; }
+.footer-legal { font-size: .85rem; }
+.site-footer p:last-child { margin-bottom: 0; }
+
+/* Le logo signe le pied de page : discret, il s'anime légèrement au survol. */
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 1.1rem;
+  line-height: 0;
+  opacity: .8;
+  transition: opacity .2s ease;
+}
+.footer-logo:hover { opacity: 1; }
+.footer-logo img {
+  display: block;
+  width: 92px;
+  height: auto;
+}
+@media (prefers-color-scheme: dark) {
+  /* Le bordeaux du logo s'éteint sur fond sombre : on le relève un peu. */
+  .footer-logo { opacity: .9; }
+  .footer-logo img { filter: brightness(1.18) saturate(1.05); }
+}
 
 @media (min-width: 640px) {
   .site-header { padding: 2.5rem 2rem 1.5rem; }
   .page h1 { font-size: 2.25rem; }
+  .page h1.lead { font-size: 2.1rem; }
+  .products { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -7,7 +7,7 @@ description: "Idées de recettes simples pour cuisiner le tempeh : mariné et po
 
 # Recettes
 
-<p class="lead">Des idées de recette à décliner selon vos envies.</p>
+<p class="lead-sm">Des idées de recette à décliner selon vos envies.</p>
 
 Le tempeh peut être coupé en tranches, en cubes ou émietté puis cuit de toutes les manières imaginables : poêlé, frit, mijoté, au four ou barbecue, bouilli ou à la vapeur.
 
@@ -58,4 +58,3 @@ Par exemple : sauce soja, jus de citron et huile d'olive en proportions égales.
 
 Émiettez et faites revenir avec une sauce tomate parfumée pour une bolognaise
 végétale généreuse.
-

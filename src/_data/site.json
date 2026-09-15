@@ -8,8 +8,9 @@
   "instagram": "https://www.instagram.com/zyfetempeh/",
   "instagramHandle": "zyfetempeh",
   "nav": [
-    { "text": "Tempeh", "url": "/" },
+    { "text": "Accueil", "url": "/" },
+    { "text": "FAQ", "url": "/faq/" },
     { "text": "Recettes", "url": "/recettes/" },
-    { "text": "À propos", "url": "/a-propos/" }
+    { "text": "Où nous trouver", "url": "/ou-nous-trouver/" }
   ]
 }

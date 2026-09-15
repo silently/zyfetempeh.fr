@@ -15,9 +15,10 @@ src/
 │   ├── logo.svg / favicon.svg
 │   ├── og-image.png     # image de partage social 1200×630
 │   └── wave.png         # décoration sous l'onglet actif de la navbar
-├── index.md              # page Tempeh + FAQ
+├── index.md             # Accueil
+├── faq.md               # FAQ
 ├── recettes.md
-├── a-propos.md
+├── ou-nous-trouver.md
 ├── sitemap.njk / robots.njk
 └── CNAME                 # domaine personnalisé
 
@@ -35,7 +36,7 @@ npm run build   # génère le site statique dans _site/
 ## Modifier le contenu
 
 - **FAQ** : liste `faq` en tête de `src/index.md` (alimente l'accordéon et les données structurées `FAQPage`).
-- **Textes** : `src/index.md`, `src/recettes.md`, `src/a-propos.md`.
+- **Textes** : `src/index.md`, `src/faq.md`, `src/recettes.md`, `src/ou-nous-trouver.md`.
 - **Navbar, Instagram, nom, URL** : `src/_data/site.json`.
 
 ## SEO

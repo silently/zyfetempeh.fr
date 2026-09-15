@@ -30,6 +30,14 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
 
+  <!-- Polices : Vollkorn (titres h1) + Schibsted Grotesk (tout le reste).
+       TODO — les héberger dans /assets plutôt que de les charger chez Google :
+       le chargement distant transmet l'IP des visiteurs à Google et ajoute
+       une connexion tierce avant le premier rendu. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600;700&family=Schibsted+Grotesk:wght@400;600;700&display=swap">
+
   <!-- Données structurées : identité du site -->
   <script type="application/ld+json">
   {
@@ -83,18 +91,26 @@
     </a>
   </nav>
 
+  {%- if page.url == "/" %}
   <header class="site-header">
-    <a class="logo" href="/" aria-label="{{ site.name }} — accueil">
-      <img src="/assets/logo.svg" alt="{{ site.name }}" width="200" height="176">
-    </a>
+    <img class="logo" src="/assets/logo.svg" alt="{{ site.name }}" width="200" height="176">
   </header>
+  {%- endif %}
 
   <main class="page" id="contenu">
     {{ content | safe }}
   </main>
 
   <footer class="site-footer">
-    <p>© {{ site.name }} — <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a></p>
+    <a class="footer-logo" href="/" aria-label="{{ site.name }} — accueil">
+      <img src="/assets/logo.png" alt="" width="794" height="690" loading="lazy" decoding="async">
+    </a>
+    <p>Contactez-nous sur <a href="{{ site.instagram }}" target="_blank" rel="noopener me">@{{ site.instagramHandle }}</a></p>
+    <p class="footer-legal">
+      © {% annee %} {{ site.name }}
+      <span aria-hidden="true"> — </span>
+      <a href="/mentions-legales/">Mentions légales</a>
+    </p>
   </footer>
 </body>
 </html>
