@@ -38,7 +38,7 @@ Selon la recette, il peut contenir des allergènes (soja, gluten ou sésame) : i
 
 ## Nos tempehs
 
-Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio(légumineuses et céréales), cependant nous n'avons pas encore démarré de certification bio.
+Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio (légumineuses et céréales), cependant nous n'avons pas encore démarré de certification bio.
 
 <ul class="products">
   <li>
@@ -51,7 +51,7 @@ Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marse
   </li>
   <li>
     <strong>Tempeh pois chiche sésame</strong>
-    Le moyen-orient à la rescousse.
+    Houmous à la rescousse.
   </li>
 </ul>
 
