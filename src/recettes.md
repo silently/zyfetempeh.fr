@@ -5,7 +5,7 @@ seoTitle: "Recettes au tempeh — idées simples et gourmandes · Zyfe Tempeh"
 description: "Idées de recettes simples pour cuisiner le tempeh : mariné et poêlé, en brochettes, émietté ou rôti au four."
 ---
 
-<h1 class="lead">recettes</h1>
+<h1 class="lead">Recettes</h1>
 
 <p class="lead-sm">Des idées de recette à décliner selon vos envies.</p>
 

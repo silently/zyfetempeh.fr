@@ -20,10 +20,7 @@ faq:
     a: "Le tempeh peut être fait à partir de différentes légumineuses ou céréales dont certaines contiennent des allergènes (soja, gluten ou sésame selon la recette). Ils sont indiqués en gras sur nos emballages."
 ---
 
-<h1 class="lead">le tempeh en pratique</h1>
-
-
-<p class="lead">Conservation, goût, cuisson : les questions qu'on nous pose le plus souvent.</p>
+<h1 class="lead">Le tempeh en pratique</h1>
 
 <div class="faq">
 {%- for item in faq %}
