@@ -7,7 +7,7 @@ faq:
   - q: "Comment se conserve le tempeh ?"
     a: "En rentrant chez vous, mettez-le au frais (entre 0 et 4°C) et si vous avez acheté plusieurs blocs, ne les empilez pas (cela pourrait relancer la fermentation). Après fabrication, le tempeh se conserve une semaine au frigo (vérifiez la DLC) et plusieurs mois au congélateur."
   - q: "Pourquoi le tempeh Zyfe est-il emballé ainsi ?"
-    a: "Une technique propre au tempeh est de fermenter dans des sachets plastiques alimentaires perforés (ce qui permet notamment de réguler l'humidité). Nous avons décidé de ne pas remplacer ces sachets afin d'éviter les manipulations et de diminuer l'utilisation du plastique. C'est pourquoi une feuille de papier est utilisée pour recouvrir les zones perforées du sachet."
+    a: "Une technique propre au tempeh est de le fermenter dans des sachets plastiques alimentaires perforés (ce qui permet notamment de réguler l'humidité). Nous avons décidé de ne pas remplacer ces sachets afin d'éviter les manipulations et de diminuer l'utilisation du plastique. C'est pourquoi une feuille de papier est utilisée pour recouvrir les zones perforées du sachet."
   - q: "Des taches noires sont apparues sur le tempeh, puis-je le manger ?"
     a: "Oui si la DLC est respectée. Ces petites taches noires sont dues à la sporulation du champignon (à la manière des veines bleues du roquefort) et n'altèrent ni le goût ni la comestibilité du tempeh. Au bout de quelques jours, le goût du tempeh est plus prononcé, indépendamment de l'apparition ou non de ces petites taches."
   - q: "Quel goût a le tempeh et quelle est sa texture ?"
@@ -20,9 +20,10 @@ faq:
     a: "Le tempeh peut être fait à partir de différentes légumineuses ou céréales dont certaines contiennent des allergènes (soja, gluten ou sésame selon la recette). Ils sont indiqués en gras sur nos emballages."
 ---
 
-# Le tempeh en pratique
+<h1 class="lead">le tempeh en pratique</h1>
 
-<p class="lead-sm">Conservation, goût, cuisson : les questions qu'on nous pose le plus souvent.</p>
+
+<p class="lead">Conservation, goût, cuisson : les questions qu'on nous pose le plus souvent.</p>
 
 <div class="faq">
 {%- for item in faq %}

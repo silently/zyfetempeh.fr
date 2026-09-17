@@ -6,7 +6,7 @@ seoTitle: "Où acheter le tempeh Zyfe à Marseille"
 description: "Où acheter le tempeh artisanal Zyfe à Marseille : disponibilités, points de vente et contact. Fabrication en petites quantités, chaque semaine."
 ---
 
-# Où nous trouver
+<h1 class="lead">où nous trouver</h1>
 
 <p class="lead-sm">Notre tempeh est fabriqué chaque semaine, en petites quantités, dans le centre de Marseille.</p>
 

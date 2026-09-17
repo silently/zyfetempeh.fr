@@ -5,11 +5,18 @@ seoTitle: "Recettes au tempeh — idées simples et gourmandes · Zyfe Tempeh"
 description: "Idées de recettes simples pour cuisiner le tempeh : mariné et poêlé, en brochettes, émietté ou rôti au four."
 ---
 
-# Recettes
+<h1 class="lead">recettes</h1>
 
 <p class="lead-sm">Des idées de recette à décliner selon vos envies.</p>
 
 Le tempeh peut être coupé en tranches, en cubes ou émietté puis cuit de toutes les manières imaginables : poêlé, frit, mijoté, au four ou barbecue, bouilli ou à la vapeur.
+
+<div class="images">
+  <img class="photo" src="/assets/cook1-sm.jpg" alt="Tempeh de pois cassé façon burger" loading="lazy">
+  <img class="photo" src="/assets/cook2-sm.jpg" alt="Tempeh de pois cassé" loading="lazy">
+  <img class="photo" src="/assets/cook3-sm.jpg" alt="Tempeh de pois cassé salade" loading="lazy">
+</div>
+
 
 
 ## À la poêle
