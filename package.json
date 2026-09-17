@@ -5,9 +5,12 @@
   "description": "Site vitrine Zyfe (GitHub Pages, Eleventy)",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "images": "node scripts/optimize-images.mjs",
+    "images:check": "node scripts/optimize-images.mjs --dry-run"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "sharp": "^0.35.4"
   }
 }

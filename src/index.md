@@ -12,7 +12,7 @@ Le tempeh est un aliment riche en protéines végétales (jusqu'à 19g de proté
 <div class="images">
   <img class="photo" src="/assets/front1-sm.jpg" alt="Bloc de tempeh tranché" loading="lazy">
   <img class="photo" src="/assets/front2-sm.jpg" alt="Tempeh de soja découpé en tranches" loading="lazy">
-  <img class="photo" src="/assets/front3-sm.jpg" alt="Tempeh de soja cuit" loading="lazy">
+  <img class="photo" src="/assets/front4-sm.jpg" alt="Tempeh de soja cuit" loading="lazy">
 </div>
 
 <p class="btn-row">
