@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   // Le glob ne prend que les fichiers à la racine d'assets : src/assets/raw/
   // (originaux des images) reste donc hors du site publié.
   eleventyConfig.addPassthroughCopy({ "src/assets/*.*": "assets" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
   // CNAME : domaine personnalisé GitHub Pages (voir README).
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 

@@ -16,6 +16,7 @@ src/
 │   ├── og-image.png     # image de partage social 1200×630
 │   ├── wave.png         # décoration sous l'onglet actif de la navbar
 │   ├── *.jpg / *.png    # images compressées servies au visiteur (générées)
+│   ├── fonts/           # Inter + Arima en woff2, servies par le site (voir Polices)
 │   ├── raw/             # originaux des images utilisées — non publiés (voir Images)
 │   └── lib/             # réserve d'images non utilisées — ni traitées, ni publiées
 ├── index.md             # Accueil
@@ -35,6 +36,7 @@ npm install
 npm run dev     # http://localhost:8080, rechargement automatique
 npm run build   # génère le site statique dans _site/
 npm run images  # recompresse les images : src/assets/raw/ -> src/assets/ (voir Images)
+npm run fonts   # retélécharge les polices depuis Google Fonts (rare, voir Polices)
 ```
 
 ## Images
@@ -82,6 +84,47 @@ fait que `npm run build` et ne repasse pas par ce script.
 Compression via [sharp](https://sharp.pixelplumbing.com/) : mozjpeg pour les
 JPEG, palette + compression maximale pour les PNG. Les SVG ne sont pas touchés.
 Gain constaté sur le site : 7,1 Mo d'originaux → 795 Ko servis.
+
+## Polices
+
+Arima (titres) et Inter (tout le reste) sont **servies par le site**, pas
+chargées chez Google : le visiteur ne fait aucune requête vers un tiers, et son
+IP n'est transmise à personne. Les `@font-face` sont en tête de
+`src/assets/style.css`, les fichiers dans `src/assets/fonts/`.
+
+Deux fichiers par police, tous deux **variables** (un seul fichier couvre
+toutes les graisses) :
+
+| Fichier | Poids | Quand il est téléchargé |
+| --- | --- | --- |
+| `inter-latin.woff2` | 47 Ko | toujours (préchargé) |
+| `arima-latin.woff2` | 30 Ko | toujours (préchargé) |
+| `inter-latin-ext.woff2` | 83 Ko | seulement si la page contient un caractère hors latin de base |
+| `arima-latin-ext.woff2` | 22 Ko | idem |
+
+Le français tient entièrement dans le sous-ensemble `latin` : en pratique les
+`latin-ext` ne partent jamais, ils sont là pour un nom propre étranger. Les deux
+polices du premier écran sont préchargées depuis `base.njk`, sinon le navigateur
+ne les découvre qu'après avoir lu le CSS.
+
+Pour récupérer une version plus récente :
+
+```sh
+npm run fonts   # retélécharge les 4 woff2 et affiche les unicode-range à vérifier
+```
+
+Les URL de Google portent un hash de version, donc le script les redemande à
+l'API plutôt que de les figer. Il affiche les `unicode-range` reçus : s'ils
+diffèrent de ceux de `style.css`, reporter les nouveaux.
+
+Changer de police : ajouter la famille dans `FAMILLES`
+(`scripts/fetch-fonts.mjs`), lancer `npm run fonts`, puis ajouter les
+`@font-face` et le `--font-body` / `--font-display` correspondants dans
+`style.css`.
+
+Les deux polices sont sous SIL Open Font License 1.1 ; les licences sont
+redistribuées avec les fichiers (`src/assets/fonts/*-OFL.txt`), comme l'exige
+la licence.
 
 ## Modifier le contenu
 

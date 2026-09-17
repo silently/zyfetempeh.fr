@@ -30,13 +30,11 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
 
-  <!-- Polices : Chau Philomene One (titres h2) + Nunito (tout le reste).
-       TODO — les héberger dans /assets plutôt que de les charger chez Google :
-       le chargement distant transmet l'IP des visiteurs à Google et ajoute
-       une connexion tierce avant le premier rendu. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&family=Spicy+Rice:wght@400;600;700&display=swap">
+  <!-- Polices : Arima (titres) + Inter (tout le reste), hébergées dans le projet
+       (@font-face en tête de style.css). Préchargées car utilisées dès le premier
+       écran : sans ça, le navigateur ne les découvre qu'après avoir lu le CSS. -->
+  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/arima-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Données structurées : identité du site -->
   <script type="application/ld+json">
