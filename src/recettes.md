@@ -13,8 +13,8 @@ Le tempeh peut être coupé en tranches, en cubes ou émietté puis cuit de tout
 
 <div class="images">
   <img class="photo" src="/assets/cook1-sm.jpg" alt="Tempeh de pois cassé façon burger" loading="lazy">
-  <img class="photo" src="/assets/cook2-sm.jpg" alt="Tempeh de pois cassé" loading="lazy">
   <img class="photo" src="/assets/cook3-sm.jpg" alt="Tempeh de pois cassé salade" loading="lazy">
+  <img class="photo" src="/assets/cook2-sm.jpg" alt="Tempeh de pois cassé" loading="lazy">
 </div>
 
 

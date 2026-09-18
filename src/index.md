@@ -41,7 +41,7 @@ Selon la recette, il peut contenir des allergènes (soja, gluten ou sésame) : i
 
 ## Nos tempehs
 
-Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio (légumineuses et céréales), cependant nous n'avons pas encore démarré de certification bio.
+Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio (légumineuses et céréales), cependant nous n'avons pas encore de certification bio.
 
 <div class="images">
   <img class="photo" src="/assets/texture-lo-sm.jpg" alt="Bloc de tempeh tranché" loading="lazy">
