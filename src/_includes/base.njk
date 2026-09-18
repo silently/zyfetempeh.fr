@@ -71,6 +71,14 @@
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
+  {%- if site.showDice %}
+  <!-- Dés de tempeh décoratifs dans les marges (grands écrans, voir style.css).
+       Affichés ou non selon showDice dans _data/site.json. -->
+  <div class="dice" aria-hidden="true">
+    {%- for i in range(12) %}<span></span>{% endfor -%}
+  </div>
+  {%- endif %}
+
   <nav class="site-nav" aria-label="Navigation principale">
     <span class="site-nav-spacer" aria-hidden="true"></span>
     <div class="site-nav-links">

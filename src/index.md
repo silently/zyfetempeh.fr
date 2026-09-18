@@ -27,13 +27,15 @@ Cette fermentation fonctionne avec d'autres graines que le soja, nous permettant
 
 ## Pourquoi Zyfe ?
 
-Zyfe est né d'une envie simple : proposer à Marseille un tempeh frais, artisanal et savoureux.
+Zyfe est né d'une envie simple : proposer à Marseille un tempeh frais et artisanal, pour celles et ceux qui souhaitent varier leur alimentation avec une source de protéine végétale, saine et facile à cuisiner.
 
-C'est un aliment riche en protéines végétales qui convient donc à de nombreux régimes (des flexitariens aux végans) mais aussi aux sportifs et aux curieux de nouveaux aliments à cuisiner — voir [nos idées de recette](/recettes/). Sa texture et son goût sont appréciés des plus jeunes !
+C'est donc un aliment qui convient à de nombreux régimes (des flexitariens aux végans) mais aussi aux sportifs et aux curieux — voir [nos idées de recette](/recettes/). Sa texture et son goût sont appréciés des plus jeunes !
+
+À surface agricole égale, les protéines végétales offrent également un meilleur rendement que les protéines animales, ce qui en fait un aliment intéressant sur le plan écologique.
 
 ## Qualités nutritionnelles
 
-Le tempeh a des propriétés nutritionnelles intéressantes : protéine complète (dans le cas du soja), fibres, minéraux et acide gras insaturés, pour un indice glycémique faible.
+Le tempeh présente un profil nutritionnel particulièrement riche : protéine complète (dans le cas du soja), fibres, minéraux et acide gras insaturés, pour un indice glycémique faible.
 
 Le tempeh est une fermentation qui améliore la digestibilité des légumineuses. Le tempeh Zyfe n'étant pas pasteurisé, ses ferments restent vivants.
 
@@ -41,7 +43,7 @@ Selon la recette, il peut contenir des allergènes (soja, gluten ou sésame) : i
 
 ## Nos tempehs
 
-Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio (légumineuses et céréales), cependant nous n'avons pas encore de certification bio.
+Ils sont fabriqués chaque semaine en petites quantités dans le centre de Marseille, à partir de matières premières bio (légumineuses et céréales), cependant nous n'avons pas de certification bio à ce jour.
 
 <div class="images">
   <img class="photo" src="/assets/texture-lo-sm.jpg" alt="Bloc de tempeh tranché" loading="lazy">

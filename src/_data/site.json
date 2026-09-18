@@ -7,6 +7,7 @@
   "ogImage": "/assets/og-image.png",
   "instagram": "https://www.instagram.com/zyfetempeh/",
   "instagramHandle": "zyfetempeh",
+  "showDice": false,
   "nav": [
     { "text": "Accueil", "url": "/" },
     { "text": "FAQ", "url": "/faq/" },
