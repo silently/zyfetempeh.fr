@@ -443,13 +443,27 @@ img { max-width: 100%; height: auto; }
 
 .faq summary {
   position: relative;
-  padding: .9rem 2rem .9rem 0;
+  padding: .9rem 2rem .9rem 2.4rem;
   font-family: var(--font-display);
   font-size: 1.3rem;
   cursor: pointer;
   list-style: none;
 }
 .faq summary::-webkit-details-marker { display: none; }
+/* Puce : une tranche de tempeh, en cycle sur les trois variétés. */
+.faq summary::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: .85rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: var(--slice) center / contain no-repeat;
+  transform: rotate(90deg);
+}
+.faq details:nth-of-type(3n+1) summary { --slice: url(/assets/slice-bb.png); }
+.faq details:nth-of-type(3n+2) summary { --slice: url(/assets/slice-sp.png); }
+.faq details:nth-of-type(3n)   summary { --slice: url(/assets/slice-sy.png); }
 /* Chevron : un carré dont on ne garde que deux bords, tourné de 45°. */
 .faq summary::after {
   content: "";
