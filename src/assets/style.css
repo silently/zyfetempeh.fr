@@ -105,6 +105,10 @@ body {
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  /* Les coins du bandeau incliné (.ribbon) débordent de quelques pixels sur
+     mobile : on les rogne plutôt que d'ouvrir un défilement horizontal.
+     « clip » (et non « hidden ») garde la navbar sticky fonctionnelle. */
+  overflow-x: clip;
 }
 
 a { color: var(--accent-strong); }
@@ -223,10 +227,40 @@ img { max-width: 100%; height: auto; }
   .insta { margin-left: auto; }
 }
 
+/* ── Bandeau incliné (champ « ribbon » du front matter) ────────────────────
+   Bande en biais posée en travers du haut du texte, légèrement transparente
+   pour laisser deviner ce qu'elle recouvre. Elle défile avec la page et
+   laisse passer les clics. */
+
+.ribbon {
+  position: absolute;
+  top: 7.5rem;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  margin: 0;
+  padding: .6rem 1rem;
+  transform: rotate(-6deg);
+  background: color-mix(in srgb, var(--btn-bg) 78%, transparent);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0 2px 10px rgb(0 0 0 / .15);
+  pointer-events: none;
+}
+.page .ribbon { text-align: center; } /* annule le justify de .page p */
+
+@media (min-width: 640px) {
+  .ribbon { font-size: 2rem; }
+}
+
 /* ── Corps de page ──────────────────────────────────────────────────────────
    Les titres sont en Arima (--font-display), le texte courant en Inter. */
 
 .page {
+  position: relative; /* repère du bandeau .ribbon */
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 2rem 1.15rem 3rem;

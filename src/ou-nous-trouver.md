@@ -2,6 +2,7 @@
 layout: base.njk
 permalink: /ou-nous-trouver/
 title: Où nous trouver
+ribbon: Ouverture en novembre 2026
 seoTitle: "Où acheter le tempeh Zyfe à Marseille"
 description: "Où acheter le tempeh artisanal Zyfe à Marseille : disponibilités, points de vente et contact. Fabrication en petites quantités, chaque semaine."
 ---
@@ -18,7 +19,7 @@ Nous fabriquons à Marseille depuis 2026, à partir de légumineuses et de cér�
 
 ## Nous contacter
 
-Les disponibilités et les points de vente changent d'une semaine à l'autre : nous les annonçons sur Instagram. C'est aussi le plus simple pour nous poser une question ou passer commande.
+Les disponibilités et les points de vente sont mises à jour sur notre compte Instagram. Pour toute question ou commande contactez-nous via la messagerie Instagram.
 
 <p class="btn-row">
   <a class="btn" href="{{ site.instagram }}" target="_blank" rel="noopener me">Nous suivre sur Instagram</a>

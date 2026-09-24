@@ -102,6 +102,11 @@
   </header>
 
   <main class="page" id="contenu">
+    {%- if ribbon %}
+    <!-- Bandeau incliné posé par-dessus le texte. Activé par « ribbon » dans
+         le front matter de la page. -->
+    <p class="ribbon" role="note">{{ ribbon }}</p>
+    {%- endif %}
     {{ content | safe }}
   </main>
 
