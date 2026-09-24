@@ -303,19 +303,19 @@ img { max-width: 100%; height: auto; }
   .dice span:nth-child(n + 7) { right: calc(var(--gutter) * var(--f)); transform: translate(50%, -50%) rotate(var(--r)); }
 
   /* Marge gauche */
-  .dice span:nth-child(1)  { --img: url(/assets/dice-soy.png);       --f: .55; --y: 8rem;    --s: 4.75rem; --r: -18deg; }
-  .dice span:nth-child(2)  { --img: url(/assets/dice-blackbean.png); --f: .25; --y: 14rem;   --s: 3.75rem; --r: 27deg; }
-  .dice span:nth-child(3)  { --img: url(/assets/dice-splitpea.png);  --f: .72; --y: 21rem;   --s: 4.25rem; --r: 8deg; }
-  .dice span:nth-child(4)  { --img: url(/assets/dice-soy.png);       --f: .38; --y: 30rem;   --s: 3.5rem;  --r: -41deg; }
-  .dice span:nth-child(5)  { --img: url(/assets/dice-blackbean.png); --f: .62; --y: 39rem;   --s: 4rem;    --r: 63deg; }
-  .dice span:nth-child(6)  { --img: url(/assets/dice-splitpea.png);  --f: .3;  --y: 50rem;   --s: 3.25rem; --r: -12deg; }
+  .dice span:nth-child(1)  { --img: url(/assets/slice-sy.png);       --f: .55; --y: 8rem;    --s: 4.75rem; --r: -18deg; }
+  .dice span:nth-child(2)  { --img: url(/assets/slice-bb.png); --f: .25; --y: 14rem;   --s: 3.75rem; --r: 27deg; }
+  /* .dice span:nth-child(3)  { --img: url(/assets/slice-sp.png);  --f: .72; --y: 21rem;   --s: 4.25rem; --r: 8deg; } */
+  .dice span:nth-child(4)  { --img: url(/assets/slice-sy.png);       --f: .38; --y: 30rem;   --s: 3.5rem;  --r: -41deg; }
+  .dice span:nth-child(5)  { --img: url(/assets/slice-bb.png); --f: .62; --y: 39rem;   --s: 4rem;    --r: 63deg; }
+  .dice span:nth-child(6)  { --img: url(/assets/slice-sp.png);  --f: .3;  --y: 50rem;   --s: 3.25rem; --r: -12deg; }
   /* Marge droite (--f compté depuis le bord droit de l'écran) */
-  .dice span:nth-child(7)  { --img: url(/assets/dice-splitpea.png);  --f: .4;  --y: 9.5rem;  --s: 4.4rem;  --r: 14deg; }
-  .dice span:nth-child(8)  { --img: url(/assets/dice-soy.png);       --f: .7;  --y: 16rem;   --s: 3.6rem;  --r: -33deg; }
-  .dice span:nth-child(9)  { --img: url(/assets/dice-blackbean.png); --f: .3;  --y: 24rem;   --s: 4.6rem;  --r: 48deg; }
-  .dice span:nth-child(10) { --img: url(/assets/dice-splitpea.png);  --f: .6;  --y: 32.5rem; --s: 3.4rem;  --r: -7deg; }
-  .dice span:nth-child(11) { --img: url(/assets/dice-soy.png);       --f: .35; --y: 42rem;   --s: 4.1rem;  --r: 22deg; }
-  .dice span:nth-child(12) { --img: url(/assets/dice-blackbean.png); --f: .68; --y: 52rem;   --s: 3.1rem;  --r: -56deg; }
+  .dice span:nth-child(7)  { --img: url(/assets/slice-sp.png);  --f: .4;  --y: 9.5rem;  --s: 4.4rem;  --r: 14deg; }
+  .dice span:nth-child(8)  { --img: url(/assets/slice-sy.png);       --f: .7;  --y: 16rem;   --s: 3.6rem;  --r: -33deg; }
+  .dice span:nth-child(9)  { --img: url(/assets/slice-bn.png); --f: .3;  --y: 24rem;   --s: 4.6rem;  --r: 48deg; }
+  .dice span:nth-child(10) { --img: url(/assets/slice-sp.png);  --f: .6;  --y: 32.5rem; --s: 3.4rem;  --r: -7deg; }
+  .dice span:nth-child(11) { --img: url(/assets/slice-sy.png);       --f: .35; --y: 42rem;   --s: 4.1rem;  --r: 22deg; }
+  .dice span:nth-child(12) { --img: url(/assets/slice-bb.png); --f: .68; --y: 52rem;   --s: 3.1rem;  --r: -56deg; }
 }
 
 /* ── Photos ─────────────────────────────────────────────────────────────── */
