@@ -10,7 +10,7 @@ description: "Mentions légales du site zyfetempeh.fr : éditeur, hébergeur, pr
 ## Éditeur du site
 
 - **Responsable de la publication** : Guillaume DENIS
-- **Contact** : [À COMPLÉTER — adresse e-mail] — [À COMPLÉTER — téléphone]
+- **Contact** : zyfe [at] ik [point] me
 - **SIRET** : [À COMPLÉTER]
 
 ## Hébergeur
@@ -25,10 +25,8 @@ L'ensemble des contenus de ce site — textes, photographies, logo et identité 
 
 ## Données personnelles et cookies
 
-Ce site est un site vitrine statique. Il **ne dépose aucun cookie**, n'utilise **aucun outil de mesure d'audience** et ne comporte **aucun formulaire** : nous ne collectons donc aucune donnée personnelle vous concernant.
+Ce site ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience et ne comporte aucun formulaire de collecte de données personnelles.
 
-Les polices de caractères et les images sont hébergées sur le site lui-même : votre navigateur n'effectue aucune requête vers un service tiers pendant votre visite.
+L'hébergeur du site, GitHub Pages, peut traiter certaines données techniques nécessaires à son fonctionnement.
 
-Si vous nous écrivez sur Instagram, l'échange se déroule sur la plateforme de Meta et relève de sa propre politique de confidentialité. Nous n'utilisons les informations que vous nous transmettez que pour répondre à votre demande.
-
-Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant : écrivez-nous à [À COMPLÉTER — adresse e-mail].
+Si vous nous contactez par Instagram, les échanges sont également soumis à la politique de confidentialité de Meta. Nous utilisons les informations communiquées uniquement pour répondre à votre demande. Vous pouvez nous contacter pour exercer vos droits sur ces données.
