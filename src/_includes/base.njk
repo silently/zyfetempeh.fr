@@ -67,6 +67,14 @@
   }
   </script>
   {%- endif %}
+
+  {%- if site.goatcounter %}
+  <!-- Mesure d'audience GoatCounter : sans cookie, statistiques anonymes
+       (voir mentions légales). Le code du compte est dans _data/site.json ;
+       le script ignore de lui-même les visites en local (eleventy --serve). -->
+  <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
+  {%- endif %}
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>

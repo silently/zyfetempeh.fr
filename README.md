@@ -2,7 +2,7 @@
 
 Site vitrine de [**Zyfe**](https://zyfetempeh.fr), généré avec [Eleventy (11ty)](https://www.11ty.dev/) et déployé sur GitHub Pages.
 
-Design minimal, mobile-first, sans framework CSS ni JavaScript.
+Design minimal, mobile-first, sans framework CSS ni JavaScript (hormis le script de statistiques GoatCounter).
 
 ## Structure
 
@@ -134,7 +134,17 @@ la licence.
 
 ## SEO
 
-`<title>`/`description` uniques par page, URL canonique, Open Graph + Twitter Card, JSON-LD (`Organization` + `FAQPage`), `sitemap.xml`/`robots.txt` générés, zéro JS.
+`<title>`/`description` uniques par page, URL canonique, Open Graph + Twitter Card, JSON-LD (`Organization` + `FAQPage`), `sitemap.xml`/`robots.txt` générés, aucun JS hormis GoatCounter (voir Statistiques de visite).
+
+## Statistiques de visite
+
+Mesure d'audience par [GoatCounter](https://www.goatcounter.com) : sans cookie,
+donc sans bandeau de consentement (décrit dans les mentions légales).
+
+- **Tableau de bord** : <https://zyfetempeh.goatcounter.com> (visites par jour, sites de provenance, pages vues).
+- **Réglage** : code du compte dans `goatcounter` de `src/_data/site.json` ; le script est ajouté dans `base.njk`. Vider la valeur retire le script du site.
+- **Ne pas compter ses propres visites** : ouvrir une fois, sur chaque navigateur utilisé,
+  <https://zyfetempeh.fr/#toggle-goatcounter>. Le même lien réactive le comptage.
 
 ## Déploiement
 
