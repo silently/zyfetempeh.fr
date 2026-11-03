@@ -10,8 +10,8 @@ description: "Mentions légales du site zyfetempeh.fr : éditeur, hébergeur, pr
 ## Éditeur du site
 
 - **Responsable de la publication** : Guillaume DENIS
-- **Contact** : zyfe [at] ik [point] me
-- **SIRET** : 845 109 164
+- **Contact** : zyfetempeh [at] proton [point] me
+- **SIRET** : 845 109 164 000 36
 
 ## Hébergeur
 

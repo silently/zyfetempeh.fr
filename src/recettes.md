@@ -23,6 +23,8 @@ Le tempeh peut être coupé en tranches, en cubes ou émietté puis cuit de tout
 
 <div class="recipe-row">
 
+L’objectif est d'obtenir une surface croustillante tout en préservant le moelleux du tempeh à cœur.
+
 - Préchauffez la poêle sur feu vif
 - En attendant, découpez le tempeh en tranches d'un demi-centimètre
 - Passez sur feu moyen, ajoutez l’huile de cuisson, épices ou herbes séchées
