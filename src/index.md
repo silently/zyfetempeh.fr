@@ -5,9 +5,9 @@ seoTitle: "Zyfe — tempeh artisanal fabriqué à Marseille, produit fermenté n
 description: "Zyfe : tempeh artisanal fermenté à partir de légumineuses, riche en protéines végétales. Qu'est-ce que le tempeh et que propose Zyfe ?"
 ---
 
-<h1 class="lead">Marseille, ton tempeh arrive</h1>
+<h1 class="lead">Marseille, ton tempeh est arrivé</h1>
 
-Le tempeh est un aliment riche en protéines végétales (jusqu'à 19g de protéines pour une portion de 100g), source de fibres et de minéraux, qui peut se cuisiner comme — et à la place de — la viande.
+Le tempeh est un aliment riche en protéines végétales (jusqu'à 20g de protéines pour une portion de 100g), source de fibres et de minéraux, qui peut se cuisiner comme — et à la place de — la viande.
 
 <div class="images">
   <img class="photo" src="/assets/front1-sm.jpg" alt="Bloc de tempeh tranché" loading="lazy">
