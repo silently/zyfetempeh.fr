@@ -17,11 +17,10 @@ Le tempeh peut être coupé en tranches, en cubes ou émietté puis cuit de tout
   <img class="photo" src="/assets/cook2-sm.jpg" alt="Tempeh de pois cassé" loading="lazy">
 </div>
 
-
-
 ## À la poêle
 
 <div class="recipe-row">
+<div class="recipe-text">
 
 L’objectif est d'obtenir une surface croustillante tout en préservant le moelleux du tempeh à cœur.
 
@@ -32,6 +31,8 @@ L’objectif est d'obtenir une surface croustillante tout en préservant le moel
 - Laissez dorer 2 à 3 min par face
 - Ajoutez un trait d'eau pour réhydrater
 - Assaisonnez hors du feu
+
+</div>
 
 <img class="photo photo--side" src="/assets/stove.jpg" alt="Bloc de tempeh doré à la poêle" width="960" height="960" loading="lazy">
 
